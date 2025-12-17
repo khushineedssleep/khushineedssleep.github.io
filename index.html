@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khushi Desai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f5f3ef;
+            color: #2a2a2a;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 80px 40px;
+        }
+
+        /* Navigation */
+        nav {
+            margin-bottom: 80px;
+        }
+
+        nav a {
+            color: #2a2a2a;
+            text-decoration: none;
+            margin-right: 25px;
+            font-size: 0.95rem;
+            font-weight: 400;
+            transition: opacity 0.2s;
+        }
+
+        nav a:hover {
+            opacity: 0.6;
+        }
+
+        /* Header */
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #5a5a5a;
+            margin-bottom: 35px;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #2a2a2a;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        /* Links with rounded rectangle outline */
+        .links {
+            display: flex;
+            gap: 15px;
+            margin: 35px 0 80px;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            padding: 10px 22px;
+            border: 1.5px solid #2a2a2a;
+            border-radius: 8px;
+            color: #2a2a2a;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 400;
+            transition: all 0.2s;
+        }
+
+        .links a:hover {
+            background: #2a2a2a;
+            color: #f5f3ef;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 70px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+            letter-spacing: -0.01em;
+        }
+
+        /* Experience */
+        .experience-item {
+            margin-bottom: 35px;
+        }
+
+        .experience-header {
+            margin-bottom: 8px;
+        }
+
+        .experience-title {
+            font-weight: 500;
+            color: #1a1a1a;
+            font-size: 1rem;
+        }
+
+        .experience-meta {
+            font-size: 0.9rem;
+            color: #6a6a6a;
+            margin-bottom: 10px;
+        }
+
+        .experience-description {
+            font-size: 0.95rem;
+            color: #2a2a2a;
+            line-height: 1.7;
+        }
+
+        /* Skills */
+        .skills {
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        .skills p {
+            margin-bottom: 15px;
+        }
+
+        .skills strong {
+            font-weight: 500;
+            color: #1a1a1a;
+        }
+
+        /* Publications */
+        .publication {
+            margin-bottom: 25px;
+        }
+
+        .pub-title {
+            font-weight: 500;
+            color: #1a1a1a;
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+        }
+
+        .pub-venue {
+            font-size: 0.9rem;
+            color: #6a6a6a;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 100px;
+            padding-top: 30px;
+            border-top: 1px solid #d0ccc4;
+            font-size: 0.85rem;
+            color: #6a6a6a;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 50px 25px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .links {
+                flex-direction: column;
+            }
+
+            .links a {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">home</a>
+            <a href="projects.html">projects</a>
+            <a href="#publications">publications</a>
+        </nav>
+
+        <header>
+            <h1>Khushi Desai</h1>
+            <p class="subtitle">MS in Computational Analysis and Public Policy, University of Chicago</p>
+
+            <p>
+                I am a graduate student at the University of Chicago's Harris School of Public Policy. 
+                I work at the intersection of data science and social policy, with a focus on economic 
+                inequality, labor markets, and health policy.
+            </p>
+
+            <p>
+                Currently, I am a Data Science and Data Visualization Fellow at the Center for Digital 
+                Scholarship, where I develop interactive visualizations mapping America's racialized 
+                fringe economy evolution from 1997-2024.
+            </p>
+
+            <div class="links">
+                <a href="mailto:khushidesai@uchicago.edu">email</a>
+                <a href="https://www.linkedin.com/in/khushi-desai-39b3511b7" target="_blank">linkedin</a>
+                <a href="https://github.com/khushidesai" target="_blank">github</a>
+                <a href="projects.html">projects</a>
+            </div>
+        </header>
+
+        <section id="research">
+            <h2>Research</h2>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span class="experience-title">Data Science & Data Visualization Fellow</span>
+                </div>
+                <div class="experience-meta">Center for Digital Scholarship, UChicago · Sep 2025 – Present</div>
+                <div class="experience-description">
+                    Selected as one of three graduate students for fellowship to develop interactive 
+                    visualizations mapping America's racialized fringe economy using advanced GIS techniques.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span class="experience-title">Research Assistant</span>
+                </div>
+                <div class="experience-meta">Social Sciences Division, UChicago · Oct 2024 – Present</div>
+                <div class="experience-description">
+                    Working with Dr. Patricia Posey analyzing interview data on the fringe economy's impact 
+                    on race, income, and political engagement. Developed 20+ R scripts for statistical 
+                    modeling and visualization.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span class="experience-title">Research Assistant</span>
+                </div>
+                <div class="experience-meta">Crown Family School of Social Work · Jun 2025 – Sep 2025</div>
+                <div class="experience-description">
+                    Examined Medicaid substance use treatment policies through qualitative coding of 41 state 
+                    waiver documents.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span class="experience-title">Research Assistant</span>
+                </div>
+                <div class="experience-meta">Gateway House Indian Council on Global Relations · Jun 2023 – May 2024</div>
+                <div class="experience-description">
+                    Analyzed Chinese investments under the Belt & Road Initiative. Published research on 
+                    Indo-Sri Lankan trade relations in KAS Japan.
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <p><strong>Programming:</strong> Python, R, SQL, LaTeX, ArcGIS</p>
+                <p><strong>Libraries & Tools:</strong> Pandas, NumPy, Scikit-Learn, PyTorch, Matplotlib, STATA, Dedoose, SurveyCTO, Qualtrics</p>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+
+            <div class="publication">
+                <div class="pub-title">"Higher Education of Students with Disabilities in India: End-Line Report"</div>
+                <div class="pub-venue">NCPEDP, 2024</div>
+            </div>
+
+            <div class="publication">
+                <div class="pub-title">"Navigating Health and Education: Children with Disabilities"</div>
+                <div class="pub-venue">Astha India, 2023</div>
+            </div>
+        </section>
+
+        <section id="teaching">
+            <h2>Teaching</h2>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span class="experience-title">Graduate Teaching Assistant</span>
+                </div>
+                <div class="experience-meta">Harris School of Public Policy, UChicago · Mar 2025 – Present</div>
+                <div class="experience-description">
+                    Teaching Python programming, R programming, and Machine Learning for Public Policy courses.
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            © 2024 Khushi Desai
+        </footer>
+    </div>
+</body>
+</html>
